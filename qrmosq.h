@@ -19,7 +19,7 @@ class qrMqtt : public mosqpp::mosquittopp
   public:
    qrMqtt(const char *id, const char * _topic, const char *host, int port);
    ~qrMqtt();
-   bool send_msg(const char *message);
+   bool send_msg(string m);
    std::string qrcam();
 
 };
