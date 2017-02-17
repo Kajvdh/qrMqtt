@@ -2,7 +2,7 @@
 #define QRMOSQ_H
 
 #include <mosquittopp.h>
-
+using namespace std;
 class qrMqtt : public mosqpp::mosquittopp
 {
   private:
