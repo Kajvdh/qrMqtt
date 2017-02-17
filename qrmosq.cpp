@@ -50,8 +50,9 @@ void qrMqtt::on_connect(int rc)
   }
 }
 
-bool qrMqtt::send_msg(const char *message)
+bool qrMqtt::send_msg(string m)
 {
+  const char *message = m.c_str();
   int ret = publish(NULL, this->topic, strlen(message), message, 2, false);
 
   return (ret == MOSQ_ERR_SUCCESS);

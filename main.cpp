@@ -28,7 +28,7 @@ int main(void)
 	{
 
 	    /// call camera [qrcam()], read QR and send to publish()
-	    qr2sp->send_msg(qr2sp->qrcam().c_str());
+	    qr2sp->send_msg(qr2sp->qrcam());
 
 	    rc = qr2sp->loop();
 
